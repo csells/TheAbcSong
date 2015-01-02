@@ -13,6 +13,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheAbcSong.Android", "TheAb
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		TheAbcSong\TheAbcSong\TheAbcSong.projitems*{4df3e3f4-1f1e-4e18-a432-cd005d18681e}*SharedItemsImports = 4
+		TheAbcSong\TheAbcSong\TheAbcSong.projitems*{e9b62bc8-eab4-4dda-aa6f-13fd75a1b00b}*SharedItemsImports = 4
+		TheAbcSong\TheAbcSong\TheAbcSong.projitems*{d7c93d56-46b8-4bc1-8cdf-a5bb9c7acd21}*SharedItemsImports = 4
 		TheAbcSong\TheAbcSong\TheAbcSong.projitems*{2ead0319-8181-49b4-a637-e53e1cbbb4e9}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

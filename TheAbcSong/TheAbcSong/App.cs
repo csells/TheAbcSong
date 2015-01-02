@@ -11,7 +11,7 @@ namespace TheAbcSong {
     public MainPage() {
       var resourcePath = this.GetType().Namespace + "." + Device.OnPlatform("iOS", "Droid", "WinPhone") + ".MVC-013F.JPG";
       var boysImage = new Image {
-        Aspect = Aspect.AspectFit,
+        Aspect = Aspect.AspectFill,
         Source = ImageSource.FromResource(resourcePath),
       };
       var johnButton = new Button { Text = "John", HorizontalOptions = LayoutOptions.Center };
@@ -27,7 +27,8 @@ namespace TheAbcSong {
       Grid.SetColumn(tomButton, 1);
 
       Content = new Grid {
-        VerticalOptions = LayoutOptions.Center,
+        HorizontalOptions = LayoutOptions.FillAndExpand,
+        VerticalOptions = LayoutOptions.FillAndExpand,
         Children = { boysImage, johnButton, tomButton },
         ColumnDefinitions = {
           new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) },
