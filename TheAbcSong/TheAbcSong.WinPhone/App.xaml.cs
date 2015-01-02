@@ -51,6 +51,7 @@ namespace TheAbcSong.WinPhone {
         PhoneApplicationService.Current.UserIdleDetectionMode = IdleDetectionMode.Disabled;
       }
 
+      new Xamarin.Forms.Labs.WP8.Services.SoundService();
     }
 
     // Code to execute when the application is launching (eg, from Start)
