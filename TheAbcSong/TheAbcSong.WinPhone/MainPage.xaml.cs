@@ -8,14 +8,16 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 
+using Xamarin.Forms;
+
+
 namespace TheAbcSong.WinPhone {
-  public partial class MainPage : global::Xamarin.Forms.Platform.WinPhone.FormsApplicationPage {
+  public partial class MainPage : PhoneApplicationPage {
     public MainPage() {
       InitializeComponent();
-      SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
-      global::Xamarin.Forms.Forms.Init();
-      LoadApplication(new TheAbcSong.App());
+      Forms.Init();
+      Content = TheAbcSong.App.GetMainPage().ConvertPageToUIElement(this);
     }
   }
 }
