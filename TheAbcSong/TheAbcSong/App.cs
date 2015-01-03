@@ -1,5 +1,5 @@
-﻿using Xamarin.Forms;
-using Xamarin.Forms.Labs.Services.SoundService;
+﻿using System;
+using Xamarin.Forms;
 
 namespace TheAbcSong {
   public class App {
@@ -18,8 +18,8 @@ namespace TheAbcSong {
       var johnButton = new Button { Text = "John", HorizontalOptions = LayoutOptions.Center };
       var tomButton = new Button { Text = "Tom", HorizontalOptions = LayoutOptions.Center };
 
-      johnButton.Clicked += (sender, e) => PlayAudio("john.mp3");
-      tomButton.Clicked += (sender, e) => PlayAudio("tom.mp3");
+      johnButton.Clicked += (sender, e) => PlayAudio("97-11-5-John-singing.mp3");
+      tomButton.Clicked += (sender, e) => PlayAudio("99-01-15-Tom-Singing.mp3");
 
       Grid.SetColumnSpan(boysImage, 2);
       Grid.SetRow(johnButton, 1);
@@ -42,10 +42,8 @@ namespace TheAbcSong {
       };
     }
 
-    async void PlayAudio(string name) {
-      //var resourcePath = "/" + name; // this.GetType().Namespace + "." + Device.OnPlatform("iOS", "Droid", "WinPhone") + "." + name;
-      var soundPlayer = DependencyService.Get<ISoundService>();
-      await soundPlayer.PlayAsync(name);
+    void PlayAudio(string name) {
+      Device.OpenUri(new Uri("http://sellsbrothers.com/Content/poststuff/fun/" + name));
     }
 
   }

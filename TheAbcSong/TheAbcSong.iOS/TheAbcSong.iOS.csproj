@@ -93,12 +93,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\Xamarin.Forms.1.3.0.6292\lib\MonoTouch10\Xamarin.Forms.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Xamarin.Forms.Labs">
-      <HintPath>..\..\packages\Xamarin.Forms.Labs.1.2.1-pre2\lib\MonoTouch\Xamarin.Forms.Labs.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Forms.Labs.iOS">
-      <HintPath>..\..\packages\Xamarin.Forms.Labs.1.2.1-pre2\lib\MonoTouch\Xamarin.Forms.Labs.iOS.dll</HintPath>
-    </Reference>
     <Reference Include="Xamarin.Forms.Platform.iOS.Classic">
       <HintPath>..\..\packages\Xamarin.Forms.1.3.0.6292\lib\MonoTouch10\Xamarin.Forms.Platform.iOS.Classic.dll</HintPath>
     </Reference>
