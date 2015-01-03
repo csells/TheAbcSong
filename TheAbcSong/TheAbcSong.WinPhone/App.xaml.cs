@@ -50,8 +50,6 @@ namespace TheAbcSong.WinPhone {
         // and consume battery power when the user is not using the phone.
         PhoneApplicationService.Current.UserIdleDetectionMode = IdleDetectionMode.Disabled;
       }
-
-      new Xamarin.Forms.Labs.WP8.Services.SoundService();
     }
 
     // Code to execute when the application is launching (eg, from Start)
